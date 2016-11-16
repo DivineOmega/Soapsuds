@@ -1,5 +1,9 @@
 <?php
 
+require '../vendor/autoload.php';
+
+use DivineOmega\Soapsuds\Soapsuds;
+
 class NumberAdditionWebService
 {
     /**
@@ -16,10 +20,4 @@ class NumberAdditionWebService
 
 }
 
-require '../vendor/autoload.php';
-
-$numberAdditionWebService = new NumberAdditionWebService();
-
-$webService = \DivineOmega\Soapsuds\Factories\WebServiceFactory::create($numberAdditionWebService);
-
-$webService->handleRequest();
+Soapsuds::handleRequest(new NumberAdditionWebService());
