@@ -1,0 +1,18 @@
+{
+    "name": "divineomega/soapsuds",
+    "type": "library",
+    "description": "Soapsuds is a library to help create SOAP web services in PHP, focusing on ease of use",
+    "keywords": ["SOAP web service", "web service", "SOAP", "SOAP web service library", "library", "PHP", "PHP library", "SOAP PHP library"],
+    "homepage": "https://github.com/DivineOmega/php-summary",
+    "license": "LGPL3",
+    "require": {
+        "php": ">=5.5.9",
+        "ext-soap": "*",
+        "zendframework/zend-soap": "2.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DivineOmega\\Soapsuds\\": "src/"
+        }
+    }
+}
