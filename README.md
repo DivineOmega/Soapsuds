@@ -1,6 +1,6 @@
 # Soapsuds
 
-Soapsuds is a PHP library that allows developers to easily create a SOAP web services from a PHP class.
+Soapsuds is a PHP library that allows developers to easily create a SOAP web service from a regular class.
 
 ## Installation
 
