@@ -10,7 +10,7 @@ Simply require this package, using Composer, in the root directory of your proje
 composer require divineomega/soapsuds
 ```
 
-Remember to include the autoload file on any page you with to use Soapsuds, if you are not using a framework that handles this for you.
+Remember to include the autoload file on any page you wish to use Soapsuds, providing you are not using a framework that handles this for you.
 
 ```php
 require 'vendor/autoload.php`
@@ -18,7 +18,7 @@ require 'vendor/autoload.php`
 
 ## Quick start
 
-To create a SOAP web service using Soapsuds, you need to create a class that handles your web service requests, then pass an instance of this class into Soapsuds. That's it.
+To create a SOAP web service using Soapsuds, you need to define a class to handle your web service requests, then pass an instance of this class into Soapsuds. That's it.
 
 These steps are described in the following sections.
 
@@ -45,10 +45,10 @@ class NumberAdditionWebService
 
 ## Passing your class instance to SoapSuds
 
-After creating your class, you should create a new instance of it and pass it in the Soapsuds `handleRequest` method. This can all be done in a single line, as follows.
+After defining your web service class, you should then create a new instance of it, and pass this object into the Soapsuds `handleRequest` method. This can all be done in a single line, as follows.
 
 ```php
 \DivineOmega\Soapsuds\Soapsuds::handleRequest(new NumberAdditionWebService());
 ```
 
-You should then be able to use the URL of this page as the endpoint for your new web service. Soapsuds also provides full WSDL output for your website by appending `?wsdl` to the endpoint URL.
+You should then be able to use the URL of this page as the endpoint for your new web service. Soapsuds also provides full WSDL output for your web service by appending `?wsdl` to the endpoint URL.
