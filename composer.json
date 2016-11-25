@@ -1,7 +1,7 @@
 {
     "name": "divineomega/soapsuds",
     "type": "library",
-    "description": "Soapsuds is a library to help create SOAP web services in PHP, focusing on ease of use",
+    "description": "Soapsuds is a PHP library that allows developers to easily create a SOAP web service from a regular class.",
     "keywords": ["SOAP web service", "web service", "SOAP", "SOAP web service library", "library", "PHP", "PHP library", "SOAP PHP library"],
     "homepage": "https://github.com/DivineOmega/php-summary",
     "license": "LGPL3",
