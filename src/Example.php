@@ -7,7 +7,7 @@ use DivineOmega\Soapsuds\Soapsuds;
 class NumberAdditionWebService
 {
     /**
-     * This method takes two float parameters, add them together, and returns the result.
+     * This method takes two float parameters, adds them together, and returns the result.
      *
      * @param float $number1
      * @param float $number2
