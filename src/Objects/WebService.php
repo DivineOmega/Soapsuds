@@ -4,6 +4,7 @@ namespace DivineOmega\Soapsuds\Objects;
 
 use Zend\Soap\AutoDiscover;
 use Zend\Soap\Server;
+use Zend\Soap\Wsdl\ComplexTypeStrategy\AnyType;
 
 class WebService
 {
@@ -36,7 +37,7 @@ class WebService
                 exit;
             }
 
-            $autodiscover = new AutoDiscover();
+            $autodiscover = new AutoDiscover(new AnyType);
             $autodiscover->setClass($this->handlerClass)->setUri($this->url);
             $wsdl = $autodiscover->generate();
 
