@@ -33,7 +33,7 @@ class WebService
         if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             if (! isset($_GET['wsdl'])) {
                 header('HTTP/1.1 400 Client Error');
-                return;
+                exit;
             }
 
             $autodiscover = new AutoDiscover();
@@ -42,16 +42,17 @@ class WebService
 
             header('Content-Type: application/xml');
             echo $wsdl->toXml();
-            return;
+            exit;
         }
 
         if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             header('HTTP/1.1 400 Client Error');
-            return;
+            exit;
         }
 
         $soap = new Server($this->url.'?wsdl');
         $soap->setObject($this->handlerObject);
         $soap->handle();
+        exit;
     }
 }
