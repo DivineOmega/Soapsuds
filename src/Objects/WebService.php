@@ -41,7 +41,7 @@ class WebService
             $autodiscover->setClass($this->handlerClass)->setUri($this->url);
             $wsdl = $autodiscover->generate();
 
-            header('Content-Type: application/xml');
+            header('Content-Type: text/xml');
             echo $wsdl->toXml();
             exit;
         }
